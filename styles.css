@@ -1,0 +1,431 @@
+/* Body and HTML */
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+/* Navigation */
+.topnav {
+    font-size: 16px;
+    border-bottom: 1px outset rgba(250, 250, 250, 0.5);
+    background: rgba(192, 192, 192, 0.9);
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+    background-color: #333; /* Change to your preferred color */
+    overflow: hidden;
+}
+
+.topnav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.topnav ul li {
+    float: left;
+}
+
+.topnav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px; /* Adjust spacing around links */
+    text-decoration: none;
+}
+
+.topnav ul li a:hover {
+    background-color: #fffefe; /* Background color on hover */
+}
+
+.topnav ul.navbar-nav li a {
+    background: rgba(28, 28, 28, 0.1);
+    color: #f8f8f8;
+}
+
+.topnav ul.navbar-nav li a:hover,
+.topnav ul.navbar-nav li a:focus {
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+
+.topnav .navbar-brand {
+    background: rgba(28, 28, 28, 0.0);
+    color: #000;
+}
+
+.topnav .navbar-brand:hover,
+.topnav .navbar-brand:focus {
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+
+/* Intro Section */
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 855px;
+}
+
+.bg-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    height: 855px;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message h1 {
+    margin-top: -50px;
+    text-shadow: 2px 1px 2px #000;
+    font-size: 5em;
+    color: rgba(255, 255, 255, 0.26);
+}
+
+.intro-message h3 {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    color: black;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Flex container to align text and image side-by-side */
+.intro-content {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Center vertically */
+    max-width: 1200px; /* Optional: Set a max width for layout */
+    margin: 0 auto; /* Center content on the page */
+    padding: 20px;
+}
+
+/* Style the text box */
+.white-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left; /* Align text to the left inside the box */
+    flex: 1; /* Make the box flexible */
+}
+
+/* Style the image */
+.intro-image img {
+    width: 450px; /* Set image width */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    margin-left: 20px; /* Space between text and image */
+}
+
+/* Background styling for the "Get in Touch" section */
+.bg-overlay4 {
+    background-image: url('getintouch.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center;
+    position: relative;
+    padding: 60px 0; /* Adjust padding as needed */
+    color: white; /* Text color */
+}
+
+.bg-overlay4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.bg-overlay4 .container {
+    position: relative;
+    z-index: 1; /* Ensure text is above the overlay */
+    text-align: center; /* Center-align text */
+}
+
+/* Style the text and buttons */
+#contact .connect {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#contact .lead {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.banner-social-buttons .btn {
+    background-color: #fff;
+    color: #000;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.banner-social-buttons .btn:hover {
+    background-color: #ccc;
+}
+
+
+
+/* About Section */
+.content-section-a {
+    padding: 50px 0;
+    background: url('https://68.media.tumblr.com/eb2382a5a4c996cfdab27bc0d1eb51ff/tumblr_nt5umxS1FY1ud7rr3o1_540.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 855px;
+}
+
+.bg-overlay2 {
+    margin-top: -50px;
+    background: rgba(255, 255, 255, 0.2);
+    height: 855px;
+}
+
+.container .link {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.container .link-footer {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+h2.section-heading {
+    margin-top: 100px;
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+/* Portfolio Section */
+#portfolio .portfolio-item {
+    margin: 0 0 15px;
+    border: 1px outset rgba(255, 255, 255, 0.6);
+}
+
+#portfolio .portfolio-item:hover {
+    transition: 0.5s;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.9);
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 25px;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+    color: #fff;
+}
+
+/* Contact Section */
+.banner {
+    padding: 100px 0;
+    background: url('https://68.media.tumblr.com/ac46aa24b44b5036e9200abb71f810d9/tumblr_nt5vzxV6Us1ud7rr3o1_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 755px;
+}
+
+.bg-overlay4 {
+    margin-top: -100px;
+    padding: 100px 0;
+    background: rgba(255, 255, 255, 0.3);
+    height: 755px;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Contact Section */
+#contact {
+    background: #ffffff;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro-divider {
+    width: 50px;
+    height: 3px;
+    background: #0056b3;
+    margin: 0 auto 30px;
+}
+
+h2.section-heading {
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0056b3;
+    outline: none;
+    background-color: #ffffff;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #0056b3;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #00449b;
+    transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+    background-color: #003578;
+}
+
+.help-block {
+    font-size: 0.9rem;
+    color: #d9534f;
+    margin-top: 5px;
+}
+
+/* Success and Error Messages */
+#successMessage, #errorMessage {
+    display: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#successMessage {
+    color: green;
+}
+
+#errorMessage {
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    h2.section-heading {
+        font-size: 2rem;
+    }
+
+    .form-control {
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-heading {
+        font-size: 1.8rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Footer */
+footer {
+    padding: 50px 0;
+    background: rgba(192, 192, 192, 0.9);
+}
+
